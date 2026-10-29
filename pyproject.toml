@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modelprofiler"
+version = "0.1.0"
+description = "On-demand Nsight Systems capture for persistent LLM servers"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+modelprofiler-nsys = "modelprofiler.nsys.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["modelprofiler*"]
